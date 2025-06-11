@@ -1,7 +1,7 @@
 ---
 title: Choosing Your JavaScript Framework - React, Angular, or Vue?
 author: Shafi
-date: 2025-07-20
+date: 2025-01-20
 tags: ["JavaScript", "Frontend"]
 image: /assets/blog/article-5.jpg
 imageAlt: Logos of React, Angular, and Vue.js arranged together.

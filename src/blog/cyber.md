@@ -1,7 +1,7 @@
 ---
 title: Cybersecurity Basics for Everyone - Protecting Yourself Online
 author: Shafi
-date: 2025-08-05
+date: 2025-02-05
 tags: ["cyber"]
 image: /assets/blog/article-1.jpg
 imageAlt: A padlock icon over a digital background with binary code and network lines.
