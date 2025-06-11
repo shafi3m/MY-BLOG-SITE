@@ -1,0 +1,40 @@
+---
+title: blog
+layout: "base.njk"
+---
+
+<!-- Filter Section -->
+<section class="filter-section">
+  <div class="container">
+    <h3 class="filter-title">Filter by Tag</h3>
+    <div class="tags-container">
+      <div class="tag active" onclick="filterArticles('all')">All</div>
+      <div class="tag" onclick="filterArticles('javascript')">JavaScript</div>
+      <div class="tag" onclick="filterArticles('css')">CSS</div>
+      <div class="tag" onclick="filterArticles('html')">HTML</div>
+      <div class="tag" onclick="filterArticles('cyber')">Cyber</div>
+      <div class="tag" onclick="filterArticles('featured')">Featured</div>
+    </div>
+    <div class="search-container">
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Search articles..."
+      />
+    </div>
+  </div>
+</section>
+
+<!-- All Articles -->
+<section class="posts" id="posts">
+  <div class="container">
+    <h2 class="section-title">All Articles</h2>
+    <div class="posts-grid">
+      <!-- Article 1 -->
+
+      {%- for post in collections.blog | reverse %} {% include
+      'article-snippet.njk' %} {%- endfor %}
+    </div>
+  </div>
+</section>

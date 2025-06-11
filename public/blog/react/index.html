@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Getting Started with React</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css"
+    />
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="progress-bar"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="/" class="logo"> &lt DevLog &gt </a>
+    <ul class="nav-links">
+      <li>
+        <a href="/" class="">Home</a>
+      </li>
+      <li>
+        <a href="/blog/" class=""
+          >All Articles</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="/about/"
+          class=""
+          >About</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+<!-- Article Content -->
+<article>
+  <header class="article-header">
+    <h1 class="article-title">Getting Started with React</h1>
+    <div class="article-meta">
+      <span>By </span>
+      <span>September 15, 2023</span>
+      <span class="reading-time" id="reading-time">3 min read</span>
+    </div>
+    <!-- <div class="article-tags">
+      <span class="tag">JavaScript</span>
+      <span class="tag">ES6</span>
+      <span class="tag">Web Development</span>
+    </div> -->
+    <img src="/assets/blog/article-2.jpg" alt="React logo on a blue background" class="article-image" />
+  </header>
+
+  <div class="article-content">
+    <h1>Getting Started with React</h1>
+<p>React is one of the most popular JavaScript libraries for building user interfaces. Created by Facebook, it emphasizes a <strong>component-based architecture</strong> and <strong>unidirectional data flow</strong>.</p>
+<h2>Why Use React?</h2>
+<ul>
+<li>Fast rendering with the virtual DOM</li>
+<li>Reusable components</li>
+<li>Strong ecosystem and community</li>
+<li>Backed by Facebook</li>
+</ul>
+<h2>Creating Your First React App</h2>
+<p>The easiest way to get started is with <strong>Create React App</strong>:</p>
+<pre><code class="language-bash">npx create-react-app my-app
+cd my-app
+npm start
+</code></pre>
+
+  </div>
+</article>
+
+<!-- Article Navigation -->
+<div class="container">
+                    
+
+  <div class="article-navigation">
+    <a href="/blog" class="nav-btn">
+      <span>Back to All Articles</span>
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2023 DevBlog. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="/script.js " defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

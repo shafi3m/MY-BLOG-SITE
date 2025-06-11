@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepage</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css"
+    />
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="progress-bar"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="/" class="logo"> &lt DevLog &gt </a>
+    <ul class="nav-links">
+      <li>
+        <a href="/" class="active">Home</a>
+      </li>
+      <li>
+        <a href="/blog/" class=""
+          >All Articles</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="/about/"
+          class=""
+          >About</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Welcome to DevBlog</h1>
+    <p>
+      A place where developers share their knowledge, experiences, and insights
+      about web development, programming, and technology.
+    </p>
+  </div>
+</section>
+
+<!-- Recent Posts -->
+<section class="posts" id="posts">
+  <div class="container">
+    <h2 class="section-title">Recent Articles</h2>
+    <div class="posts-grid"> <div class="post-card" data-tags="cyber">
+  <img
+    src="/assets/blog/article-1.jpg"
+    alt="A padlock icon over a digital background with binary code and network lines."
+    class="post-image"
+  />
+  <div class="post-content">
+    <h3 class="post-title">Cybersecurity Basics for Everyone - Protecting Yourself Online</h3>
+    <div class="post-meta">
+      <span>August 5, 2025</span>
+    </div>
+    
+    <div class="tags-container">
+      
+      <span class="tag-blog">cyber</span>
+      
+    </div>
+    
+    <p class="post-excerpt">In an increasingly connected world, understanding basic...</p>
+    <a href="/blog/cyber/" class="btn">Continue Reading...</a>
+  </div>
+</div>
+ <div class="post-card" data-tags="JavaScript Frontend Frameworks React Angular Vue">
+  <img
+    src="/assets/blog/article-5.jpg"
+    alt="Logos of React, Angular, and Vue.js arranged together."
+    class="post-image"
+  />
+  <div class="post-content">
+    <h3 class="post-title">Choosing Your JavaScript Framework - React, Angular, or Vue?</h3>
+    <div class="post-meta">
+      <span>July 20, 2025</span>
+    </div>
+    
+    <div class="tags-container">
+      
+      <span class="tag-blog">JavaScript</span>
+      
+      <span class="tag-blog">Frontend</span>
+      
+      <span class="tag-blog">Frameworks</span>
+      
+      <span class="tag-blog">React</span>
+      
+      <span class="tag-blog">Angular</span>
+      
+      <span class="tag-blog">Vue</span>
+      
+    </div>
+    
+    <p class="post-excerpt">Navigating the world of JavaScript frameworks can be...</p>
+    <a href="/blog/choosing react/" class="btn">Continue Reading...</a>
+  </div>
+</div>
+ <div class="post-card" data-tags="css html">
+  <img
+    src="/assets/blog/article-4.jpg"
+    alt="A desktop monitor, laptop, tablet, and smartphone displaying a website layout."
+    class="post-image"
+  />
+  <div class="post-content">
+    <h3 class="post-title">Mastering Responsive Web Design- A Guide for Modern Developers</h3>
+    <div class="post-meta">
+      <span>June 10, 2025</span>
+    </div>
+    
+    <div class="tags-container">
+      
+      <span class="tag-blog">css</span>
+      
+      <span class="tag-blog">html</span>
+      
+    </div>
+    
+    <p class="post-excerpt">In today&#39;s multi-device world, responsive web design...</p>
+    <a href="/blog/responsive/" class="btn">Continue Reading...</a>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2023 DevBlog. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="/script.js " defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

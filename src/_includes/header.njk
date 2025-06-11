@@ -1,0 +1,29 @@
+<!-- Scroll Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="progress-bar"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="/" class="logo"> &lt DevLog &gt </a>
+    <ul class="nav-links">
+      <li>
+        <a href="/" class="{% if page.url == '/' %}active{% endif %}">Home</a>
+      </li>
+      <li>
+        <a href="/blog/" class="{% if page.url == '/blog/' %}active{% endif %}"
+          >All Articles</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="/about/"
+          class="{% if page.url == '/about/' %}active{% endif %}"
+          >About</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>

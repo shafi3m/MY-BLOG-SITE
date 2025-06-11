@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>about</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css"
+    />
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="progress-bar"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="/" class="logo"> &lt DevLog &gt </a>
+    <ul class="nav-links">
+      <li>
+        <a href="/" class="">Home</a>
+      </li>
+      <li>
+        <a href="/blog/" class=""
+          >All Articles</a
+        >
+      </li>
+
+      <li>
+        <a
+          href="/about/"
+          class="active"
+          >About</a
+        >
+      </li>
+    </ul>
+  </div>
+</nav>
+
+    
+<div class="body-wrap">
+  <div class="about-wrapper">
+    <div class="about-image">
+      <img src="/assets/blog/about-pic.jpg" alt="About Image" />
+    </div>
+    <div class="about-content">
+      <h1 class="about-title">Hi, I'm the Author</h1>
+      <p class="about-text">
+        This blog shares insights about
+        <span class="about-highlight">web development</span>, especially
+        <span class="about-highlight">JavaScript</span> and
+        <span class="about-highlight">CSS</span>.
+      </p>
+      <p class="about-text">
+        Built with <span class="about-highlight">Eleventy</span> &
+        <span class="about-highlight">Nunjucks</span>, this site is crafted for
+        simplicity, performance, and clarity.
+      </p>
+      <p class="about-text">Want to see more of my work?</p>
+      <a href="" class="portfolio-link" target="_blank">View My Portfolio</a>
+
+      <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://linkedin.com/in/yourusername" target="_blank"
+          >LinkedIn</a
+        >
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2023 DevBlog. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="/script.js " defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

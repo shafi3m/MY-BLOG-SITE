@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>blog</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/atom-one-dark.min.css"
+    />
+  </head>
+  <body>
+    <!-- Scroll Progress Bar -->
+<div class="progress-container">
+  <div class="progress-bar" id="progress-bar"></div>
+</div>
+
+<!-- Navigation -->
+<nav class="navbar">
+  <div class="container nav-container">
+    <a href="index.html" class="logo">DevBlog</a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="blogs.html">All Articles</a></li>
+    </ul>
+  </div>
+</nav>
+
+    
+<!-- Filter Section -->
+<section class="filter-section">
+  <div class="container">
+    <h3 class="filter-title">Filter by Tag</h3>
+    <div class="tags-container">
+      <div class="tag active" onclick="filterArticles('all')">All</div>
+      <div class="tag" onclick="filterArticles('javascript')">JavaScript</div>
+      <div class="tag" onclick="filterArticles('css')">CSS</div>
+      <div class="tag" onclick="filterArticles('html')">HTML</div>
+      <div class="tag" onclick="filterArticles('performance')">Performance</div>
+      <div class="tag" onclick="filterArticles('accessibility')">
+        Accessibility
+      </div>
+    </div>
+    <div class="search-container">
+      <input
+        type="text"
+        id="search-input"
+        class="search-input"
+        placeholder="Search articles..."
+      />
+    </div>
+  </div>
+</section>
+
+<!-- All Articles -->
+<section class="posts" id="posts">
+  <div class="container">
+    <h2 class="section-title">All Articles</h2>
+    <div class="posts-grid">
+      <!-- Article 1 -->
+      <div class="post-card" data-tags="javascript css">
+        <img
+          src="https://source.unsplash.com/random/600x400/?javascript"
+          alt="JavaScript"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h3 class="post-title">Mastering Modern JavaScript Features</h3>
+          <div class="post-meta">
+            <span>June 1, 2023</span>
+            <span>5 min read</span>
+          </div>
+          <div class="tags-container">
+            <span class="tag">JavaScript</span>
+            <span class="tag">CSS</span>
+          </div>
+          <p class="post-excerpt">
+            Learn about the latest JavaScript features like optional chaining,
+            nullish coalescing, and more that can make your code cleaner and
+            more efficient.
+          </p>
+          <a href="article.html" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 2 -->
+      <div class="post-card" data-tags="css html">
+        <img
+          src="https://source.unsplash.com/random/600x400/?css"
+          alt="CSS"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h3 class="post-title">CSS Grid vs Flexbox: When to Use Each</h3>
+          <div class="post-meta">
+            <span>May 25, 2023</span>
+            <span>7 min read</span>
+          </div>
+          <div class="tags-container">
+            <span class="tag">CSS</span>
+            <span class="tag">HTML</span>
+          </div>
+          <p class="post-excerpt">
+            A comprehensive guide to understanding when to use CSS Grid and when
+            to use Flexbox for your layout needs.
+          </p>
+          <a href="article.html" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 3 -->
+      <div class="post-card" data-tags="html javascript">
+        <img
+          src="https://source.unsplash.com/random/600x400/?html"
+          alt="HTML"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h3 class="post-title">Semantic HTML: Why It Matters</h3>
+          <div class="post-meta">
+            <span>May 18, 2023</span>
+            <span>4 min read</span>
+          </div>
+          <div class="tags-container">
+            <span class="tag">HTML</span>
+            <span class="tag">JavaScript</span>
+          </div>
+          <p class="post-excerpt">
+            Learn how using semantic HTML elements can improve accessibility,
+            SEO, and maintainability of your web projects.
+          </p>
+          <a href="article.html" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 4 -->
+      <div class="post-card" data-tags="javascript performance">
+        <img
+          src="https://source.unsplash.com/random/600x400/?code"
+          alt="Performance"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h3 class="post-title">Optimizing JavaScript Performance</h3>
+          <div class="post-meta">
+            <span>May 10, 2023</span>
+            <span>8 min read</span>
+          </div>
+          <div class="tags-container">
+            <span class="tag">JavaScript</span>
+            <span class="tag">Performance</span>
+          </div>
+          <p class="post-excerpt">
+            Discover techniques to make your JavaScript code run faster and more
+            efficiently in the browser.
+          </p>
+          <a href="article.html" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 5 -->
+      <div class="post-card" data-tags="css accessibility">
+        <img
+          src="https://source.unsplash.com/random/600x400/?web"
+          alt="Accessibility"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h3 class="post-title">CSS for Accessibility</h3>
+          <div class="post-meta">
+            <span>May 5, 2023</span>
+            <span>6 min read</span>
+          </div>
+          <div class="tags-container">
+            <span class="tag">CSS</span>
+            <span class="tag">Accessibility</span>
+          </div>
+          <p class="post-excerpt">
+            Learn how to use CSS to create more accessible web experiences for
+            all users.
+          </p>
+          <a href="article.html" class="btn">Read More</a>
+        </div>
+      </div>
+
+      <!-- Article 6 -->
+      <div class="post-card" data-tags="html accessibility">
+        <img
+          src="https://source.unsplash.com/random/600x400/?development"
+          alt="HTML Accessibility"
+          class="post-image"
+        />
+        <div class="post-content">
+          <h3 class="post-title">Building Accessible Forms with HTML</h3>
+          <div class="post-meta">
+            <span>April 28, 2023</span>
+            <span>5 min read</span>
+          </div>
+          <div class="tags-container">
+            <span class="tag">HTML</span>
+            <span class="tag">Accessibility</span>
+          </div>
+          <p class="post-excerpt">
+            A guide to creating forms that are accessible to all users,
+            including those using assistive technologies.
+          </p>
+          <a href="article.html" class="btn">Read More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>&copy; 2023 DevBlog. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+  </body>
+</html>

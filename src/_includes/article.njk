@@ -1,0 +1,45 @@
+---
+layout: "base.njk"
+---
+
+<!-- Article Content -->
+<article>
+  <header class="article-header">
+    <h1 class="article-title">{{ title }}</h1>
+    <div class="article-meta">
+      <span>By {{ author }}</span>
+      <span>{{ date | readableDate }}</span>
+      <span class="reading-time" id="reading-time">3 min read</span>
+    </div>
+    <!-- <div class="article-tags">
+      <span class="tag">JavaScript</span>
+      <span class="tag">ES6</span>
+      <span class="tag">Web Development</span>
+    </div> -->
+    <img src="{{ image }}" alt="{{ imageAlt }}" class="article-image" />
+  </header>
+
+  <div class="article-content">
+    {{ content | safe }}
+  </div>
+</article>
+
+<!-- Article Navigation -->
+<div class="container">
+  {% set posts = collections.blog.reverse() %} {% set previous = null %} {% set
+  next = null %} {% for post in posts %} {% if post.url == page.url %} {% set
+  next = posts[loop.index0 + 1] %} {% if loop.index0 > 0 %} {% set previous =
+  posts[loop.index0 - 1] %} {% endif %} {% endif %} {% endfor %}
+
+  <div class="article-navigation">
+    <a href="/blog" class="nav-btn">
+      <span>Back to All Articles</span>
+    </a>
+  </div>
+</div>
+
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+</script>

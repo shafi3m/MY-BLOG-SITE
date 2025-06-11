@@ -1,0 +1,26 @@
+---
+title: homepage
+layout: "base.njk"
+---
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Welcome to DevBlog</h1>
+    <p>
+      A place where developers share their knowledge, experiences, and insights
+      about web development, programming, and technology.
+    </p>
+  </div>
+</section>
+
+<!-- Recent Posts -->
+<section class="posts" id="posts">
+  <div class="container">
+    <h2 class="section-title">Recent Articles</h2>
+    <div class="posts-grid">
+      {%- for post in collections.blog.reverse().slice(0, 3) %} {% include
+      'article-snippet.njk' %} {%- endfor %}
+    </div>
+  </div>
+</section>
