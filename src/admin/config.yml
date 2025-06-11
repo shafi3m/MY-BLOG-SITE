@@ -4,8 +4,8 @@ backend:
   branch: main
   auth_scope: repo
 
-media_folder: "src/assets/uploads"
-public_folder: "/assets/uploads"
+media_folder: "public/assets/blog"
+public_folder: "/assets/blog"
 
 collections:
   - name: "blog"
