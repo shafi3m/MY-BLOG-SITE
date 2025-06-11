@@ -2,7 +2,8 @@ backend:
   name: github
   repo: shafi3m/MY-BLOG-SITE
   branch: main
-  auth_scope: repo
+  base_url: https://devlog-shafi.netlify.app
+  auth_endpoint: api/auth
 
 media_folder: "public/assets/blog"
 public_folder: "/assets/blog"
