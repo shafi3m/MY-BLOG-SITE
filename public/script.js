@@ -67,11 +67,13 @@ function searchArticles() {
     const title = article
       .querySelector(".post-title")
       .textContent.toLowerCase();
-    const excerpt = article
-      .querySelector(".post-excerpt")
-      .textContent.toLowerCase();
 
-    if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+    // const excerpt = article
+    //   .querySelector(".post-excerpt")
+    //   .textContent.toLowerCase();
+
+    // if (title.includes(searchTerm) || excerpt.includes(searchTerm)) {
+    if (title.includes(searchTerm)) {
       article.style.display = "flex";
     } else {
       article.style.display = "none";

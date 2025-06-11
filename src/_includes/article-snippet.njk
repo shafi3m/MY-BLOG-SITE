@@ -5,7 +5,7 @@
     class="post-image"
   />
   <div class="post-content">
-    <h3 class="post-title">{{ post.data.title }}</h3>
+    <h3 class="post-title">{{ post.data.title | truncate(53) }}</h3>
     <div class="post-meta">
       <span>{{ post.date | readableDate }}</span>
     </div>
