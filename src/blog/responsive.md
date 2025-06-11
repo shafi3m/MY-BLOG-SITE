@@ -1,7 +1,8 @@
 ---
 title: Mastering Responsive Web Design- A Guide for Modern Developers
+author: Shafi
 date: 2025-06-10
-tags: ["css", "html"]
+tags: ["css", "html", "featured"]
 image: /assets/blog/article-4.jpg
 imageAlt: A desktop monitor, laptop, tablet, and smartphone displaying a website layout.
 excerpt: In today's multi-device world, responsive web design isn't just a trend; it's a necessity. Learn the core principles and techniques to build websites that look great and function flawlessly on any screen size.

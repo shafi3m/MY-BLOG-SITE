@@ -1,5 +1,6 @@
 ---
 title: Getting Started with HTML A Beginner's Guide
+author: Shafi
 date: 2025-05-01
 tags: ["html", "web development", "beginners"]
 image: /assets/blog/article-1.jpg

@@ -1,5 +1,6 @@
 ---
 title: Choosing Your JavaScript Framework - React, Angular, or Vue?
+author: Shafi
 date: 2025-07-20
 tags: ["JavaScript", "Frontend", "Frameworks", "React", "Angular", "Vue"]
 image: /assets/blog/article-5.jpg

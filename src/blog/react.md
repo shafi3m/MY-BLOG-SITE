@@ -1,5 +1,6 @@
 ---
 title: Getting Started with React
+author: Shafi
 date: 2023-09-15
 tags: ["featured", "javascript", "react"]
 image: /assets/blog/article-2.jpg

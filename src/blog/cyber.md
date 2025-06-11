@@ -1,5 +1,6 @@
 ---
 title: Cybersecurity Basics for Everyone - Protecting Yourself Online
+author: Shafi
 date: 2025-08-05
 tags: ["cyber"]
 image: /assets/blog/article-1.jpg
