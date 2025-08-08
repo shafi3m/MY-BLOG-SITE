@@ -1,3 +1,4 @@
 ﻿# MY-BLOG-SITE
 
-🔗 **Live Demo:** [https://devlog-shafi.netlify.app](https://devlog-shafi.netlify.app)
+🔗 **Live Demo:** [Click here](https://devlog-shafi.netlify.app)
+
